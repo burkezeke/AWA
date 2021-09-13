@@ -1,0 +1,74 @@
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 247, 250);
+}
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    float: left;
+    border-radius: 5px;
+}
+  
+
+.btn:hover {
+    background-color: RoyalBlue;
+}
+
+#board {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(245, 247, 250);
+}
+
+#boardcontainer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+}
+
+#boardmenu {
+    width: 136px;
+    height: 100%;
+    max-height: 62px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 1%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: translateX(-50%) translateY(-50%) scale(0.95);
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 350px;
+        height: 400px;
+    }
+}
